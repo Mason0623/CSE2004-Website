@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Happy Chinese New Year</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+
+<body>
+  <header>
+    <div class="brand">
+      <h1>Chinese New Year</h1>
+      <p class="subtitle">A practical guide (from New Year’s to Eve  Day 5)</p>
+    </div>
+
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#timeline">Day</a>
+      <a href="#table">Table Overview</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+
+    <section id="overview" class="card">
+      <h2>Overview</h2>
+
+
+      <figure class="hero">
+        <img
+          src="image/lion dance.jpeg"
+          alt="Lion dance performance during Chinese New Year celebration"
+        />
+        <figcaption>One common celebration: lion dance.</figcaption>
+      </figure>
+
+      <!-- paragraph  -->
+      <p class="extra-space">The Spring Festival is the most important holiday in the traditional Chinese calendar. It marks the beginning of a new year. The date changes each year, usually falling between late January and mid-February. During this time, people go back home, visit relatives and friends, and eat special holiday foods. Public places often organize traditional performances like lion dances to create a festive mood. It is also the busiest travel season in China, with millions of people making long trips to reunite with their families.</p>
+      <p class="extra-space">As one of the longest public holidays of the year, the Spring Festival gives people time to focus on family and social connections. Before the holiday, many families clean their homes and put up red couplets as decoration. On New Year’s Eve, it is common for family members to have dinner together. During the holiday, some neighborhoods hold group celebrations, including lion dance performances and other traditional shows. These activities help pass down culture from one generation to the next.</p>
+      <p class="extra-space">From a social point of view, the Spring Festival helps slow down daily life and strengthen family bonds. Work and business activities usually decrease for a while, and attention shifts to family gatherings and visiting friends. Traditional customs are more visible during this period. Younger family members visit elders, and red envelopes are given out. Long-standing traditions like the lion dance appear in streets and public spaces, giving the holiday a clear and familiar look each year.</p>
+      <p class="extra-space">Learn more from 
+        <a href="https://en.wikipedia.org/wiki/Chinese_New_Year" target="_blank">
+          Wikipedia
+        </a>.
+      </p>
+    </section>
+
+    <section id="customs" class="card">
+
+      <!-- list -->
+      <h2>Common Traditions</h2>
+      <ul>
+        <li>Family reunion dinner</li>
+        <li>Giving red envelopes</li>
+        <li>Visiting relatives</li>
+        <li>Setting off firecrackers</li>
+        <li>Lion dance</li>
+        <li>Dragon dance</li>
+        <li>Putting up red couplets</li>
+        <li>Pasting the character "Fu" upside down</li>
+        <li>Temple fairs</li>
+        <li>Ancestor worship</li>
+      </ul>
+
+      <!-- JS -->
+      <button id="toggle-notes"> Some notes</button>
+
+      <div id="extra-notes" class="hidden">
+        <p>Traditions may vary by region and family.</p>
+        <p>In southern China, especially in my HometownGuangdong, people have the tradition of visiting flower markets before the Spring Festival. These markets are crowded and colorful, filled with peach blossoms, kumquat trees, and orchids. Each plant has a meaning. Peach blossoms stand for romance, kumquat trees represent wealth, and orchids symbolize elegance and good fortune. Families buy these plants to decorate their homes and welcome good luck for the new year. Walking through the market at night, with lights and noise everywhere, is part of the holiday feeling for many locals.</p>
+      </div>
+    </section>
+
+    
+    <aside class="card sidebar">
+      <h2>Day Filter</h2>
+
+     
+      <div class="day-buttons">
+        <button class="day-btn" data-day="Before New Year’s Eve">Before New Year’s Eve</button>
+        <button class="day-btn" data-day="New Year’s Eve">New Year’s Eve</button>
+        <button class="day-btn" data-day="New Year’s Day">New Year’s Day</button>
+        <button class="day-btn" data-day="Day 2">Day 2</button>
+        <button class="day-btn" data-day="Day 3">Day 3</button>
+        <button class="day-btn" data-day="Day 4">Day 4</button>
+        <button class="day-btn" data-day="Day 5">Day 5</button>
+        <button class="day-btn" data-day="Lantern Festival">Lantern Festival</button>
+        <button class="day-btn" data-day="all">Show all</button>
+      </div>
+
+      <p id="filter-status">Showing: all</p>
+    </aside>
+
+  </main>
+
+  <!-- 时间线区域 -->
+  <section id="timeline" class="card">
+    <h2>Day-by-Day</h2>
+
+    <div class="grid">
+  <article class="day-card" data-day="Before New Year’s Eve">
+    <h3>Before New Year’s Eve</h3>
+    <p>Cleaning the home, buying snacks, and putting up red couplets.</p>
+  </article>
+
+  <article class="day-card" data-day="New Year’s Eve">
+    <h3>New Year’s Eve</h3>
+    <p>Family reunion dinner, staying up late, and fireworks in some areas.</p>
+  </article>
+
+  <article class="day-card" data-day="New Year’s Day">
+    <h3>New Year’s Day</h3>
+    <p>Greeting elders, saying “Gong Xi Fa Cai,” and giving red envelopes.</p>
+  </article>
+
+  <article class="day-card" data-day="Day 2">
+    <h3>Day 2</h3>
+    <p>Visiting relatives and friends. Some families visit the wife’s family.</p>
+  </article>
+
+  <article class="day-card" data-day="Day 3">
+    <h3>Day 3</h3>
+    <p>A quieter day for rest. Some people avoid visiting to reduce conflict.</p>
+  </article>
+
+  <article class="day-card" data-day="Day 4">
+    <h3>Day 4</h3>
+    <p>Preparing food and continuing family visits depending on the region.</p>
+  </article>
+
+  <article class="day-card" data-day="Day 5">
+    <h3>Day 5</h3>
+    <p>In some places, people welcome the “God of Wealth” and return to routines.</p>
+  </article>
+
+  <article class="day-card" data-day="Lantern Festival">
+    <h3>Lantern Festival</h3>
+    <p>Lantern displays, tangyuan, and a festive ending to the holiday season.</p>
+  </article>
+</div>
+
+  <!-- 表格（必须至少一个table） -->
+  </section> 
+  <section id="table" class="card">
+    <h2>Quick Table</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      <tr>
+        <td>Before New Year’s Eve</td>
+        <td>Cleaning, shopping, decorations (couplets, “Fu” character)</td>
+      </tr>
+
+      <tr>
+        <td>New Year’s Eve</td>
+        <td>Reunion dinner, family time, fireworks (region-dependent)</td>
+      </tr>
+
+      <tr>
+        <td>New Year’s Day</td>
+        <td>Greetings, blessings, and red envelopes</td>
+      </tr>
+
+      <tr>
+          <td>Days 2–5</td>
+          <td>Visiting relatives/friends, resting, and gradual return to routine</td>
+      </tr>
+
+      <tr>
+          <td>Lantern Festival</td>
+          <td>Lanterns and tangyuan; symbolic end of the celebration</td>
+      </tr>
+
+      </tbody>
+
+    </table>
+
+
+  </section>
+
+  
+  <section id="feedback" class="card">
+    <h2>Feedback</h2>
+
+    <form id="feedback-form">
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="3"></textarea>
+
+      <button type="submit">Submit</button>
+
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>Mason — CSE Website #1</p>
+  </footer>
+
+</body>
+</html>
