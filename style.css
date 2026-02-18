@@ -1,0 +1,101 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #e52712ca;
+  color: #333;
+  padding: 20px;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+
+header nav {
+  display: flex;
+  gap: 12px;
+}
+
+
+main {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+
+main section {
+  flex-grow: 1;
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #fff8dc;
+}
+
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+.extra-space {
+  margin-bottom: 20px;
+}
+
+figure {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+button {
+  border-radius: 20px;
+  padding: 8px 16px;
+  background-color: #ffb6c1;  /* 浅粉 */
+  border: none;
+  color:#ffffff;
+}
